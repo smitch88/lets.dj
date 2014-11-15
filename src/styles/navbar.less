@@ -1,0 +1,60 @@
+// =============================================================================
+// Navigation Bar
+// =============================================================================
+
+@import "../../node_modules/bootstrap/less/navbar.less";
+
+body {
+  padding: @navbar-height 0;
+  overflow-y: scroll;
+}
+
+.nav-main {
+  padding: 20px 0 20px 0;
+  background-color: rgba( 255,255,255, .9);
+}
+
+.navbar-top {
+  &:extend(.navbar);
+  &:extend(.navbar-fixed-top);
+}
+
+.navbar-item {
+  padding-top: 14px;
+  padding-bottom: 8px;
+  color: #1f1f1f;
+  font-size: 2.2em;
+  padding-left: 26px;
+  margin-right: 40px;
+  i:hover {
+    text-shadow: 2px 2px #aaa;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+}
+
+//
+// Navigation Footer
+// -----------------------------------------------------------------------------
+
+.navbar-footer {
+  &:extend(.navbar);
+  &:extend(.navbar-fixed-bottom);
+
+  background-color: #1f1f1f;
+
+  a {
+    color: #eee;
+  }
+
+  .text-muted {
+    margin-top: 1em;
+    color: #aaa;
+    span + span:before {
+      content: "\2022\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+      padding: 0 3px 0 7px;
+    }
+  }
+}
