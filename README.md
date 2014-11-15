@@ -1,4 +1,4 @@
-# React / Flux lets.dj application ( base template yeomen generated with [![Facebook React Starter Kit](https://dl.dropboxusercontent.com/u/16006521/Screens/facebook-react-starter-kit.png)](https://github.com/kriasoft/react-starter-kit). THANKS! )
+# React / Flux lets.dj application [Started off Facebook React Starter Kit](https://github.com/kriasoft/react-starter-kit)
 
 > This project is a social music experiment ( more to come! )
 
