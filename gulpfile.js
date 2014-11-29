@@ -65,7 +65,7 @@ gulp.task('vendor', function() {
 
 // Static files
 gulp.task('assets', function() {
-  src.assets = 'src/assets/**';
+  src.assets = ['src/assets/**', 'src/data/**'];
   return gulp.src(src.assets)
     .pipe($.changed(DEST))
     .pipe(gulp.dest(DEST))

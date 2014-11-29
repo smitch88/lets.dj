@@ -6,13 +6,13 @@
 
 var React = require('react');
 var Link = require('../components/Link.jsx');
-var DefaultLayout = require('../layouts/DefaultLayout.jsx');
+var LetsDJLayout = require('../layouts/LetsDJLayout.jsx');
 
 var AboutPage = React.createClass({
   getDefaultProps() {
     return {
       title: 'About',
-      layout: DefaultLayout,
+      layout: LetsDJLayout,
       breadcrumb: (
         <ol className="breadcrumb">
           <li><Link to="/">Home</Link></li>
@@ -25,7 +25,9 @@ var AboutPage = React.createClass({
     return (
       <div className="container">
         <div className="row">
-          <h1>What's Up?</h1>
+          <div className="col-md-12">
+            <h1>What's Up?</h1>
+          </div>
         </div>
       </div>
     );

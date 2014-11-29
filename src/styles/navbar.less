@@ -11,15 +11,12 @@ body {
 
 .nav-main {
 
-  padding: 20px 0 20px 0;
+  padding: 15px 0 20px 0;
   background-color: rgba( 255,255,255, .9);
-  padding-left: 20%;
+  height: 100px;
 
   .navbar-item {
-    padding-top: 14px;
-    padding-bottom: 8px;
     color: #1f1f1f;
-    margin-right: 20%;
     font-size: 2.5em;
     i:hover {
       text-shadow: 2px 2px #aaa;
@@ -28,6 +25,7 @@ body {
     img {
       margin-right: 10px;
     }
+
   }
 
 }
@@ -44,7 +42,7 @@ body {
 .navbar-footer {
   &:extend(.navbar);
   &:extend(.navbar-fixed-bottom);
-
+  min-height: 50px;
   background-color: #1f1f1f;
 
   a {

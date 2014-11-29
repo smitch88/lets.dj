@@ -8,15 +8,15 @@ var React = require('react');
 var Link = require('../components/Link.jsx');
 var LetsDJLayout = require('../layouts/LetsDJLayout.jsx');
 
-var PrivacyPage = React.createClass({
+var HostPage = React.createClass({
   getDefaultProps() {
     return {
-      title: 'Privacy Policy',
+      title: 'Host A Party',
       layout: LetsDJLayout,
       breadcrumb: (
         <ol className="breadcrumb">
           <li><Link to="/">Home</Link></li>
-          <li className="active">Privacy</li>
+          <li className="active">Host A Party</li>
         </ol>
       )
     };
@@ -28,4 +28,4 @@ var PrivacyPage = React.createClass({
   }
 });
 
-module.exports = PrivacyPage;
+module.exports = HostPage;

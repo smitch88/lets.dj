@@ -34,7 +34,10 @@ function render(page) {
 var routes = {
   '/': () => render(require('./pages/Index.jsx')),
   '/privacy': () => render(require('./pages/Privacy.jsx')),
-  '/about': () => render(require('./pages/About.jsx'))
+  '/about': () => render(require('./pages/About.jsx')),
+  '/host': () => render(require('./pages/Host.jsx')),
+  '/find': () => render(require('./pages/Find.jsx')),
+  '/account': () => render(require('./pages/Account.jsx'))
 };
 
 // Initialize a router
@@ -50,3 +53,4 @@ AppDispatcher.register((payload) => {
 
   return true; // No errors.  Needed by promise in Dispatcher.
 });
+

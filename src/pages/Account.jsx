@@ -8,15 +8,15 @@ var React = require('react');
 var Link = require('../components/Link.jsx');
 var LetsDJLayout = require('../layouts/LetsDJLayout.jsx');
 
-var PrivacyPage = React.createClass({
+var AccountPage = React.createClass({
   getDefaultProps() {
     return {
-      title: 'Privacy Policy',
+      title: 'My Account',
       layout: LetsDJLayout,
       breadcrumb: (
         <ol className="breadcrumb">
           <li><Link to="/">Home</Link></li>
-          <li className="active">Privacy</li>
+          <li className="active">Account</li>
         </ol>
       )
     };
@@ -28,4 +28,4 @@ var PrivacyPage = React.createClass({
   }
 });
 
-module.exports = PrivacyPage;
+module.exports = AccountPage;
